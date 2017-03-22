@@ -136,13 +136,12 @@ class NeuralNetwork:
             if epoch % 1 == 0:
                 if self.verbose:
                     y_pred, y_true = self.predict(X_test, y_test)
-                    print("Epoch: ", epoch, " - Error: ", l2_error_total, " - Accuracy im Testset: ", accuracy_score(y_true, y_pred))
-                    y_pred, y_true = self.predict(X_train, y_train)
-                    #print("Epoch: ", epoch, " - Error: ", l2_error_total, " - Accuracy im Trainingsset: ", accuracy_score(y_true, y_pred))
-                    #print("############################################")
-
-                    y_pred, y_true = self.predict(X_test, y_test)
                     acc = accuracy_score(y_true, y_pred)
+                    print("Epoch: ", epoch, " - Error: ", l2_error_total, " - Accuracy im Testset: ", acc)
+                    y_pred, y_true = self.predict(X_train, y_train)
+                    print("Epoch: ", epoch, " - Error: ", l2_error_total, " - Accuracy im Trainingsset: ", accuracy_score(y_true, y_pred))
+                    print("############################################")
+
                     accuracy.append(acc)
                     no_epochs.append(sample_no)
         if self.verbose:
