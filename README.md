@@ -70,14 +70,21 @@ for eta in etas:
 
 ```
 ## Experiments and Evaluation
+<<<<<<< HEAD
 For the evaluation mlp_np.py is used, as it performs much faster, than mlp_plain.py. Seeing 70000 Samples mlp_np.py needs 14 seconds and mlp_plain.py 399 seconds.
 The model is evaluated after **500000** samples are seen. The accuracy scores are based on the model performance on the test set.  The Hyperparameters for each optimizer are noted in the table:
+=======
+For the evaluation mlp_np.py is used, as it performs much faster, than mlp_plain.py. Seeing 70000 Samples mlp_np.py needs XXX and mlp_plain.py XXX.
+The model is evaluated after **2.400.000** samples are seen. The accuracy scores are based on the model performance on the test set.  The Hyperparameters for each optimizer are noted in the table:
+>>>>>>> 32bc9e78d6bbdc3948580c0a3b027340c000a259
 
 | Optimizer  | Best Accuracy score |
 | ------------- | ------------- |
-| SGD  *Eta=3.5*|   |
-| Momentum *Eta=0.1, My=0.9*|   |
-| AdaGrad *Eta=1*||
+| SGD  *Eta=3.5*|  97,1% |
+| Momentum *Eta=0.1, My=0.9*| 96,5%  |
+| AdaGrad *Eta=1*| 96,3%|
+
+![Evaluation Curve - Accuracy vs Samples seen](https://github.com/MaviccPRP/mlp_from_scratch/blob/master/eval_nn.png)
 ## To-Dos
 - [X] Implement per sample SGD
 - [ ] Implementing mini-batch 
