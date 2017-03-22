@@ -65,7 +65,7 @@ To run the plain mlp type:
 ```
 $ python mlp_plain.py
 ```
-If you want to change hyperparameters and optimizers, edit lines XX in the script.
+If you want to change hyperparameters and optimizer types, edit lines 212+ in the script.
 ```python
 etas = [0.5,0.8,1,2]
 for eta in etas:
