@@ -1,4 +1,4 @@
-# Class of a NeuralNetwork with SGD and Momentum
+# Class of a NeuralNetwork with SGD, Momentum and AdaGrad
 import numpy as np
 import matplotlib.pyplot as plt  # Plotting library
 plt.matplotlib.use('Agg')
@@ -64,7 +64,7 @@ class NeuralNetwork:
         accuracy = []
         no_epochs = []
         sample_no = 0
-
+        
         if self.optimizer == "adagrad":
             # initialize matrix for adagrad
             gti_01 = np.zeros(len(self.w01[0]))
@@ -144,7 +144,6 @@ class NeuralNetwork:
                     acc = accuracy_score(y_true, y_pred)
                     accuracy.append(acc)
                     no_epochs.append(sample_no)
-
         if self.verbose:
             return no_epochs, accuracy
 
