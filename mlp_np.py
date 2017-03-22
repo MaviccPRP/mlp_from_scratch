@@ -109,6 +109,7 @@ class NeuralNetwork:
                 l1_delta = np.dot(l1_delta.T, l0)
 
                 if self.optimizer == "adagrad":
+                    # Fundamental idea using https://xcorr.net/2014/01/23/adagrad-eliminating-learning-rates-in-stochastic-gradient-descent/
                     # Update Weights using AdaGrad
                     grad_12 = self.eta * l2_delta.T
                     self.g12 += np.power(grad_12, 2)
@@ -206,7 +207,6 @@ enc.fit(y)
 labels = enc.transform(y).toarray()
 
 X_train, X_test, y_train, y_test = train_test_split(samples, labels, test_size=0.33, random_state=42)
-
 # Create instance of NeuralNetwork, fit to dataset, predict and print accuracy
 
 etas = [3.5]

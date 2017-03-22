@@ -114,6 +114,7 @@ class NeuralNetwork:
                 l1_delta = dot(transpose(l1_delta), l0)
 
                 if self.optimizer == "adagrad":
+                    # Fundamental idea using https://xcorr.net/2014/01/23/adagrad-eliminating-learning-rates-in-stochastic-gradient-descent/
                     # Update Weights using AdaGrad
                     grad_12 = l2_delta.T
                     self.g12 += np.power(grad_12, 2)
