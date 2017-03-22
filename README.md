@@ -66,11 +66,11 @@ The model is evaluated after **500000** samples are seen. The accuracy scores ar
 | Momentum *Eta=0.1, My=0.9*|   |
 | AdaGrad *Eta=1*||
 ## To-Dos
-[X] Implement per sample SGD
-[ ] Implementing mini-batch 
-[ ] Implement the AdaGrad with diagonal matrices
-[ ] Gridsearch for optimizing hyperparameters
-[ ] Compare evaluation performance on testset and trainingset
+- [X] Implement per sample SGD
+- [ ] Implementing mini-batch 
+- [ ] Implement the AdaGrad with diagonal matrices
+- [ ] Gridsearch for optimizing hyperparameters
+- [ ] Compare evaluation performance on testset and trainingset
 ## References
 - Principles of training multi-layer neural network using backpropagation, http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html
 - A Step by Step Backpropagation Example, https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
