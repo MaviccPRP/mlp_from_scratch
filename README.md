@@ -100,6 +100,7 @@ The model is evaluated after **2.400.000** samples are seen. The accuracy scores
 - In future work, implementing mini-natches could help improving accuracy performance and smoothness of Momentum and AdaGrad. 
 - Still hyperparameters are not fully evaluated, this could be done using Gridsearch.
 - Additionally the AdaGrad algorithm could be updated with a diagonal matrix approach.
+- Comparing accuracy on test and training sets, to exclude overfitting.
 ## References
 - Principles of training multi-layer neural network using backpropagation, http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html
 - A Step by Step Backpropagation Example, https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
