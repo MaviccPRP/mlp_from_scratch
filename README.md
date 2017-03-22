@@ -7,6 +7,7 @@
 * [Quickstart](#quickstart)
 * [Experiments and Evaluation](#experiments-and-evaluation)
 * [To-Dos](#to-dos)
+* [Final Thoughts](#final-thoughts-and-future-work)
 * [References](#references)
 
 
@@ -15,8 +16,8 @@ To better understand the processes in a multi layer perceptron, this projects im
 This is a multi layer perceptron written in Python 3.
 ## Structure and Components
 This project contains three modules:
-- mlp_np.py uses NumPy for Linear Algebra and Calculus operations
-- mlp_plain.py uses **no** additional libraries in the Backpropagation
+- mlp_np.py uses NumPy for linear algebra and calculus operations
+- mlp_plain.py uses **no** additional libraries in the feed forward and backpropagation process
 - algebra_helpers.py contains methods for linear algebra
 
 The mlp consists of an input layer a hidden layer and an output layer. The hidden layer uses a ReLU activation function, sigmoid is available, too. The output layer uses a softmax function to predict a multinomial problem. The input data labels needs to be encoded as one hot vectors. You can find a one hot vector encoder and decoder for multinomial classes in the code.
@@ -90,6 +91,15 @@ The model is evaluated after **2.400.000** samples are seen. The accuracy scores
 - [ ] Implement the AdaGrad with diagonal matrices
 - [ ] Gridsearch for optimizing hyperparameters
 - [ ] Compare evaluation performance on testset and trainingset
+
+## Final Thoughts and future work
+
+- Best results are reached using the SGD per sample algorithm. 
+- Momentum is oscillating, when higher percentages are reached. This could be because of the per sample approach. 
+- The AdaGrad algorithms is smoother than Momentum and SGD, but does not reach accuracy scores of SGD or Momentum.
+- In future work, implementing mini-natches could help improving accuracy performance and smoothness of Momentum and AdaGrad. 
+- Still hyperparameters are not fully evaluated, this could be done using Gridsearch.
+- Additionally the AdaGrad algorithm could be updated with a diagonal matrix approach.
 ## References
 - Principles of training multi-layer neural network using backpropagation, http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html
 - A Step by Step Backpropagation Example, https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
