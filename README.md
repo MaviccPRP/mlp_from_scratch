@@ -75,9 +75,9 @@ The model is evaluated after **2.400.000** samples are seen. The accuracy scores
 
 | Optimizer  | Best Accuracy score |
 | ------------- | ------------- |
-| SGD  *Eta=3.5*|   |
-| Momentum *Eta=0.1, My=0.9*|   |
-| AdaGrad *Eta=1*||
+| SGD  *Eta=3.5*|  97,1% |
+| Momentum *Eta=0.1, My=0.9*| 96,5%  |
+| AdaGrad *Eta=1*| 96,3%|
 
 ![Evaluation Curve - Accuracy vs Samples seen](https://github.com/MaviccPRP/mlp_from_scratch/blob/master/eval_nn.png)
 ## To-Dos
