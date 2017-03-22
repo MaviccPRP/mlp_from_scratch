@@ -4,7 +4,7 @@
 * [Synopsis](#synopsis)
 * [Prerequisites](#prerequisites)
 * [Quickstart](#quickstart)
-* [Experiments and Evaluation](#experiments and evaluation)
+* [Experiments and Evaluation](#experiments-and-evaluation)
 * [References](#references)
 
 
