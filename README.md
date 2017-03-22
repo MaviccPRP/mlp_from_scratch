@@ -71,4 +71,11 @@ The model is evaluated after **500000** samples are seen. The accuracy scores ar
 [ ] Implement the AdaGrad with diagonal matrices
 [ ] Gridsearch for optimizing hyperparameters
 [ ] Compare evaluation performance on testset and trainingset
-
+## References
+- Principles of training multi-layer neural network using backpropagation, http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html
+- A Step by Step Backpropagation Example, https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+- Julia Kreutzer, Julian Hitschler, Neural Networks: Architectures and Applications for NLP, http://www.cl.uni-heidelberg.de/courses/ws16/neuralnetworks/slides/session02.pdf
+- Julia Kreutzer, Julian Hitschler, Neural Networks: Architectures and Applications for NLP, http://www.cl.uni-heidelberg.de/courses/ws16/neuralnetworks/slides/session03.pdf
+- A Neural Network in 13 lines of Python (Part 2 - Gradient Descent), http://iamtrask.github.io/2015/07/27/python-network-part2/
+- How the backpropagation algorithm works, http://neuralnetworksanddeeplearning.com/chap2.html
+- Paul Fackler, Notes on Matrix Calculus, http://www4.ncsu.edu/%7Epfackler/MatCalc.pdf
