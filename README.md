@@ -92,7 +92,7 @@ The model is evaluated after **2.400.000** samples are seen. The accuracy scores
 - [ ] Gridsearch for optimizing hyperparameters
 - [ ] Compare evaluation performance on testset and trainingset
 
-## Final Thoughts and future work
+## Final Thoughts and Future Work
 
 - Best results are reached using the SGD per sample algorithm. 
 - Momentum is oscillating, when higher percentages are reached. This could be because of the per sample approach. 
