@@ -1,3 +1,5 @@
+# Some helper functions for linear algebra
+
 # scalar multiplication
 def scalar_mult(k, X):
     res = []
@@ -35,12 +37,6 @@ def hadamard(X,Y):
 
     return res
 
-l1_delta = [0.017329524383939823, 0.029647815559742975, -0.0012236811810426591, -0.0050457655158837947, -0.036635254072932777]
-relu = [[ 1.,  1.,  1.,  1.,  1.]]
-res = [[  2.50386570e-04,   3.77547690e-04,  -1.55556644e-05,  -6.76090683e-05,
-   -5.02015585e-04]]
-
-
 
 # element wise summing up of two matrices
 def summarize(X,Y):
@@ -61,31 +57,9 @@ def substract(X,Y):
         res.append(row)
     return res
 
-def maximum(X):
-    return max(X)
-
 def transpose(X):
     return list(zip(*X))
 
-# 4x4 matrix
-X = [[1, 2, 3, 4],
-[1, 2, 3, 4],
-[1, 2, 3, 4],
-[5, 4, 2, 1]]
-
-X_2 = [[3, 2, 3, 4],
-[3, 2, 3, 4],
-[3, 2, 3, 4],
-[3, 4, 2, 1]]
-
-vec1 = [[1,2,3,4]]
-vec2 = [[1,2,3,4]]
-
-# 4x2 matrix
-Y = [[3, 4],
-[6, 1],
-[3, 2],
-[11, 2]]
 
 def sum_matrix(X, axis=0):
     if axis == 0:
