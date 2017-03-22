@@ -57,9 +57,16 @@ $ pip install -r requirements.txt
 ```
 Congratulations! You are now ready to train the mlp recognizing handwritten digits.
 The scripts by default uses the MNIST dataset for fitting. Generally it can run on any dataset fullfilling the sklearn dataset format.
+The scripts will output the mean error per epoch, the accuracy on the test set and the accuracy on the training set for each of the three optimizers. Finally it will create a graph, displaying the accuracy on seen samples (see evaluation section).
 To run the mlp with NumPy just type in:
 ```
 $ python mlp_np.py
+```
+Example output:
+```
+Epoch:  0  - Error:  4.46429073186e-09  - Accuracy im Testset:  0.944415584416
+Epoch:  0  - Error:  4.46429073186e-09  - Accuracy im Trainingsset:  0.947846481876
+############################################
 ```
 To run the plain mlp type:
 ```
