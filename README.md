@@ -1,4 +1,6 @@
 
+# Multi Layer Perceptron from Scratch Using Python3 
+
 ## Table of contents
 
 * [Intro](#intro)
