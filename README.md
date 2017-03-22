@@ -31,10 +31,10 @@ The mlp has three optimization algorithms implemented:
 All three optimizers are based on calculating gradients per sample.
 The scripts contain the following methods:
 
-- **fit**
+1. **fit**
 
 >Fits the model to the data. If verbose mode, returns the number of number of seen samples as a list and the suitable accuracy scores as a list.
-- **predict**
+2. **predict**
 
 >Makes predictions of given dataset samples and labels using the fitted model.
 
