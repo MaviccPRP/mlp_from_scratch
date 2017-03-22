@@ -78,6 +78,8 @@ The model is evaluated after **500000** samples are seen. The accuracy scores ar
 | SGD  *Eta=3.5*|   |
 | Momentum *Eta=0.1, My=0.9*|   |
 | AdaGrad *Eta=1*||
+
+![Evaluation Curve - Accuracy vs Samples seen](https://github.com/MaviccPRP/mlp_from_scratch/blob/master/eval_nn.png)
 ## To-Dos
 - [X] Implement per sample SGD
 - [ ] Implementing mini-batch 
