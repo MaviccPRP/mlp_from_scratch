@@ -70,7 +70,8 @@ for eta in etas:
 
 ```
 ## Experiments and Evaluation
-For the evaluation mlp_np.py is used, as it performs much faster, than mlp_plain.py. Seeing 70000 Samples mlp_np.py needs 14 seconds and mlp_plain.py 399 seconds.
+The dataset is splitted into a trainingset (46900 samples) and a testset (23100 samples) using the train_test_split method of sklearn. 
+For the evaluation mlp_np.py is used, as it performs much faster, than mlp_plain.py. Seeing 46900 Samples mlp_np.py needs 14 seconds and mlp_plain.py 399 seconds.
 The model is evaluated after **2.400.000** samples are seen. The accuracy scores are based on the model performance on the test set.  The Hyperparameters for each optimizer are noted in the table:
 
 | Optimizer  | Best Accuracy score |
