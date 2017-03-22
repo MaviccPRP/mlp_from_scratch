@@ -30,9 +30,11 @@ All three optimizers are based on calculating gradients per sample.
 The scripts contain the following methods:
 
 - **fit**
-Fits the model to the data. If verbose mode, returns the number of number of seen samples as a list and the suitable accuracy scores as a list.
+
+*Fits the model to the data. If verbose mode, returns the number of number of seen samples as a list and the suitable accuracy scores as a list.*
 - **predict**
-Makes predictions of given dataset samples and labels using the fitted model
+
+*Makes predictions of given dataset samples and labels using the fitted model*
 
 The mlp class takes following parameters.
 - dataset samples as a list of lists
