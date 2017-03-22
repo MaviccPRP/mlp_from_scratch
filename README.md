@@ -12,10 +12,13 @@
 
 ## Synopsis
 To better understand the processes in a multi layer perceptron, this projects implements a simple mlp from scratch using no external machine learning libraries. Algebraic or calculus libraries are just used in a saving manner. 
-This is a multi layer perceptron written in Python 3. There are two versions available.
+This is a multi layer perceptron written in Python 3.
+## Structure and Components
+This project contains three modules:
 - mlp_np.py uses NumPy for Linear Algebra and Calculus operations
 - mlp_plain.py uses **no** additional libraries in the Backpropagation
-## Structure and Components
+- algebra_helpers.py contains methods for linear algebra
+
 The mlp consists of an input layer a hidden layer and an output layer. The hidden layer uses a ReLU activation function, sigmoid is available, too. The output layer uses a softmax function to predict a multinomial problem. The input data labels needs to be encoded as one hot vectors. You can find a one hot vector encoder and decoder for multinomial classes in the code.
 The mlp has three optimization algorithms implemented:
 - Stochastic gradient descent
