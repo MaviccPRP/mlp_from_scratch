@@ -1,7 +1,7 @@
 
 ## Table of contents
 
-* [Synopsis](#synopsis)
+* [Intro](#intro)
 * [Structure and Components](#structure-and-components)
 * [Prerequisites](#prerequisites)
 * [Quickstart](#quickstart)
@@ -11,7 +11,7 @@
 * [References](#references)
 
 
-## Synopsis
+## Intro
 To better understand the processes in a multi layer perceptron, this projects implements a simple mlp from scratch using no external machine learning libraries. Algebraic or calculus libraries are just used in a saving manner. 
 This is a multi layer perceptron written in Python 3.
 ## Structure and Components
