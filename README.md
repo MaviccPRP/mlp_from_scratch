@@ -85,11 +85,11 @@ The dataset is splitted into a trainingset (46900 samples) and a testset (23100 
 For the evaluation mlp_np.py is used, as it performs much faster, than mlp_plain.py. Seeing 46900 Samples mlp_np.py needs 14 seconds and mlp_plain.py 399 seconds.
 The model is evaluated after **2.400.000** samples are seen. The accuracy scores are based on the model performance on the test set.  The Hyperparameters for each optimizer are noted in the table:
 
-| Optimizer  | Best Accuracy score |
-| ------------- | ------------- |
-| SGD  *Eta=3.5*|  97,1% |
-| Momentum *Eta=0.1, My=0.9*| 96,5%  |
-| AdaGrad *Eta=1*| 96,3%|
+| Optimizer  | Best Accuracy score |Mean total Error|
+| ------------- | ------------- |-------------|
+| SGD  *Eta=3.5*|  97,1% | 2.97e-12|
+| Momentum *Eta=0.1, My=0.9*| 96,5%  |1.97e-09 |
+| AdaGrad *Eta=1*| 96,3%|1.22e-08|
 
 ![Evaluation Curve - Accuracy vs Samples seen](https://github.com/MaviccPRP/mlp_from_scratch/blob/master/eval_nn.png)
 ## To-Dos
